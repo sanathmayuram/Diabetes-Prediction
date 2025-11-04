@@ -1,0 +1,98 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #47b2ff, #6a4dfc);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+h2 {
+    color: #d1f7c4;
+    margin-bottom: 30px;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-spacing: 15px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #6a4dfc;
+    box-shadow: 0 0 8px rgba(106,77,252,0.4);
+    outline: none;
+}
+
+button {
+    background: #6a4dfc;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #5730ff;
+    transform: translateY(-2px);
+}
+
+h2#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fffb00;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%;
+    }
+}

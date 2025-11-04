@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <h1>A Rama Krishna Sanath's Project</h1>
+    <h2>Diabetes Prediction</h2>
+
+    <form action="{{ url_for('predict_datapoint') }}" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label>Pregnancies</label><br>
+                    <input type="text" name="Pregnancies" required>
+                </td>
+                <td>
+                    <label>Glucose</label><br>
+                    <input type="text" name="Glucose" required>
+                </td>
+                <td>
+                    <label>BloodPressure</label><br>
+                    <input type="text" name="BloodPressure" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>SkinThickness</label><br>
+                    <input type="text" name="SkinThickness" required>
+                </td>
+                <td>
+                    <label>Insulin</label><br>
+                    <input type="text" name="Insulin" required>
+                </td>
+                <td>
+                    <label>BMI</label><br>
+                    <input type="text" name="BMI" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>DiabetesPedigreeFunction</label><br>
+                    <input type="text" name="DiabetesPedigreeFunction" required>
+                </td>
+                <td>
+                    <label>Age</label><br>
+                    <input type="text" name="Age" required>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;">
+                    <button type="submit">Predict</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Prediction Result: {{ results }}</h2>
+</body>
+</html>
